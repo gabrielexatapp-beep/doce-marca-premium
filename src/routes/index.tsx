@@ -445,7 +445,7 @@ function Contato() {
             <ContatoLinha label="E-mail" value="contato@doceriadarebeka.com.br" href="mailto:contato@doceriadarebeka.com.br" />
             <ContatoLinha
               label="Endereço"
-              value="Rodovia Geraldo Scavone, 2730, Rua 03, Nº353, Jardim Califórnia, Jacareí/SP, 12305-490"
+              value="Rodovia Geraldo Scavone, 2730, Rua 03, Nº353, Jardim Califórnia, São José dos Campos/SP, 12305-490"
             />
             <ContatoLinha label="Instagram" value="@doceria.darebeka" href="https://www.instagram.com/doceria.darebeka/" />
             <ContatoLinha label="Facebook" value="Doceria da Rebeka" href="https://www.facebook.com/doceriadaRebeka/?locale=pt_BR" />
@@ -545,7 +545,7 @@ function Footer() {
         <div className="md:col-span-4">
           <div className="text-xs uppercase tracking-widest text-pudim font-semibold">Contato</div>
           <ul className="mt-5 space-y-3 text-sm leading-relaxed">
-            <li>Rodovia Geraldo Scavone, 2730<br />Rua 03, Nº353, Jardim Califórnia<br />Jacareí/SP — 12305-490</li>
+            <li>Rodovia Geraldo Scavone, 2730<br />Rua 03, Nº353, Jardim Califórnia<br />São José dos Campos/SP — 12305-490</li>
             <li><a href="tel:+5512981285713" className="hover:text-white">(12) 98128-5713</a></li>
             <li><a href="mailto:contato@doceriadarebeka.com.br" className="hover:text-white">contato@doceriadarebeka.com.br</a></li>
           </ul>
@@ -558,7 +558,7 @@ function Footer() {
       <div className="border-t border-white/10">
         <div className="container-editorial py-6 text-xs text-white/60 flex flex-wrap justify-between gap-2">
           <span>© 2026 Doceria da Rebeka. Todos os direitos reservados.</span>
-          <span>Jacareí — São Paulo, Brasil</span>
+          <span>São José dos Campos — São Paulo, Brasil</span>
         </div>
       </div>
     </footer>
