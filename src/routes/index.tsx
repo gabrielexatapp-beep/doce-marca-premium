@@ -50,10 +50,15 @@ function Header() {
       <div className="container-editorial flex h-20 items-center justify-between">
         <a href="#inicio" className="flex items-center gap-3">
           <img src={logo.url} alt="Doceria da Rebeka" className="h-14 w-14 object-contain" />
-          <span className="hidden sm:block font-display text-lg leading-tight text-navy">
-            Doceria<br />
-            <span className="text-primary">da Rebeka</span>
-          </span>
+          <div className="hidden sm:flex flex-col">
+            <span className="font-display text-xl leading-tight text-navy">
+              Doceria<br />
+              <span className="text-primary">da Rebeka</span>
+            </span>
+            <span className="text-sm font-medium text-navy/70 mt-0.5 tracking-wide">
+              A maior fábrica de pudim do mundo é joseense
+            </span>
+          </div>
         </a>
         <nav className="hidden lg:flex items-center gap-9">
           {NAV.map((n) => (
@@ -104,12 +109,12 @@ function Hero() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-cream via-background to-background" />
       <div className="container-editorial grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
         <div className="lg:col-span-6 animate-rise">
-          <span className="eyebrow">Feito em Jacareí/SP • Desde sempre com amor</span>
+          <span className="eyebrow">Feito em São José dos Campos/SP • Desde sempre com amor</span,span>
           <h1 className="mt-5 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.02] text-navy">
             O doce que <em className="not-italic text-primary">conquista corações</em> em todo o Brasil.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-xl">
-            Da nossa produção em Jacareí/SP para milhares de pontos de venda, a Doceria da Rebeka
+            Da nossa produção em São José dos Campos/SP para milhares de pontos de venda, a Doceria da Rebeka
             une sabor caseiro, qualidade e escala para encantar consumidores todos os dias.
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
@@ -179,7 +184,7 @@ function Historia() {
           </h2>
           <p className="mt-7 text-lg text-muted-foreground leading-relaxed">
             A Doceria da Rebeka nasceu com o propósito de entregar doces que despertam
-            memórias afetivas e conquistam pela primeira colherada. Com sede em Jacareí/SP,
+            memórias afetivas e conquistam pela primeira colherada. Com sede em São José dos Campos/SP,
             somos especialistas na produção de pudins e brigadeirões, atendendo exclusivamente
             no atacado com padrão de qualidade, praticidade e consistência.
           </p>
@@ -189,7 +194,7 @@ function Historia() {
           </p>
           <div className="mt-8 flex items-center gap-4 text-sm text-navy/80">
             <span className="h-px w-10 bg-primary" />
-            <span className="font-medium">Sede em Jacareí — São Paulo</span>
+            <span className="font-medium">Sede em São José dos Campos — São Paulo</span>
           </div>
         </div>
       </div>
