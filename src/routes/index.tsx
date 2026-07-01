@@ -109,7 +109,7 @@ function Hero() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-cream via-background to-background" />
       <div className="container-editorial grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
         <div className="lg:col-span-6 animate-rise">
-          <span className="eyebrow">Feito em São José dos Campos/SP • Desde sempre com amor</span,span>
+          <span className="eyebrow">Feito em São José dos Campos/SP • Desde sempre com amor</span>
           <h1 className="mt-5 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.02] text-navy">
             O doce que <em className="not-italic text-primary">conquista corações</em> em todo o Brasil.
           </h1>
