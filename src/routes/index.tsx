@@ -266,12 +266,13 @@ function Produtos() {
         <div className="mt-16 grid md:grid-cols-2 gap-8 lg:gap-12">
           {PRODUTOS.map((p) => (
             <article key={p.name} className="group flex flex-col rounded-[2rem] bg-card border border-border overflow-hidden shadow-[0_18px_50px_-30px_rgba(30,43,94,0.25)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_60px_-30px_rgba(233,30,99,0.35)]">
-              <div className="relative aspect-[5/4] overflow-hidden bg-cream">
+              <div className="relative aspect-[5/4] overflow-hidden bg-cream p-6">
                 <img
                   src={p.img}
                   alt={p.name}
-                  className="h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-105"
+                  className="h-full w-full object-contain transition-transform duration-[900ms] ease-out group-hover:scale-105"
                 />
+
                 <span className="absolute top-5 left-5 rounded-full bg-background/90 backdrop-blur px-3.5 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
                   {p.tag}
                 </span>
