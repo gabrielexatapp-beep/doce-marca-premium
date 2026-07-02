@@ -236,6 +236,7 @@ const PRODUTOS = [
       "O verdadeiro queridinho dos clientes. Textura cremosa, calda no ponto perfeito e sabor caseiro que conquista à primeira colherada. Ideal para consumo individual e perfeito para grandes mercados que buscam um produto de alta aceitação.",
     highlights: ["Textura cremosa", "Calda no ponto", "Embalagem prática", "Sabor caseiro", "Campeão de vendas"],
     img: pudimProduto.url,
+    aspect: "aspect-[5/4]",
   },
   {
     tag: "Clássico irresistível",
@@ -244,7 +245,7 @@ const PRODUTOS = [
       "Cremosidade e sabor marcante de chocolate em uma porção individual irresistível. Produzido com cuidado e ingredientes selecionados, é uma opção perfeita para vitrines, gôndolas e consumidores que procuram um doce clássico com qualidade.",
     highlights: ["Chocolate intenso", "Textura cremosa", "Porção individual", "Ideal para vitrines", "Alto apelo visual"],
     img: brigadeirao.url,
-    imgClass: "scale-[1.75]",
+    aspect: "aspect-[3/4]",
   },
 ];
 
