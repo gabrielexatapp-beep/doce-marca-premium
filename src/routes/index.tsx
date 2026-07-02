@@ -273,7 +273,7 @@ function Produtos() {
                 <img
                   src={p.img}
                   alt={p.name}
-                  className={`h-full w-full object-contain transition-transform duration-[900ms] ease-out group-hover:scale-105 ${p.imgClass ?? ""}`}
+                  className={`h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-105 ${p.imgClass ?? ""}`}
                 />
 
                 <span className="absolute top-5 left-5 rounded-full bg-background/90 backdrop-blur px-3.5 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
