@@ -47,7 +47,7 @@ function Header() {
         scrolled ? "bg-background/85 backdrop-blur-md shadow-[0_2px_20px_-12px_rgba(0,0,0,0.15)]" : "bg-transparent"
       }`}
     >
-      <div className="container-editorial flex h-20 items-center justify-between">
+      <div className="container-editorial flex h-28 items-center justify-between">
         <a href="#inicio" className="flex items-center gap-4">
           <img src={logo.url} alt="Doceria da Rebeka" className="h-28 w-28 object-contain" />
           <span className="hidden sm:block font-display text-base md:text-lg leading-tight text-navy">
@@ -101,7 +101,7 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="inicio" className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+    <section id="inicio" className="relative pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden">
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-cream via-background to-background" />
       <div className="container-editorial grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
         <div className="lg:col-span-6 animate-rise">
@@ -236,6 +236,7 @@ const PRODUTOS = [
       "O verdadeiro queridinho dos clientes. Textura cremosa, calda no ponto perfeito e sabor caseiro que conquista à primeira colherada. Ideal para consumo individual e perfeito para grandes mercados que buscam um produto de alta aceitação.",
     highlights: ["Textura cremosa", "Calda no ponto", "Embalagem prática", "Sabor caseiro", "Campeão de vendas"],
     img: pudimProduto.url,
+    aspect: "aspect-[5/4]",
   },
   {
     tag: "Clássico irresistível",
@@ -244,6 +245,8 @@ const PRODUTOS = [
       "Cremosidade e sabor marcante de chocolate em uma porção individual irresistível. Produzido com cuidado e ingredientes selecionados, é uma opção perfeita para vitrines, gôndolas e consumidores que procuram um doce clássico com qualidade.",
     highlights: ["Chocolate intenso", "Textura cremosa", "Porção individual", "Ideal para vitrines", "Alto apelo visual"],
     img: brigadeirao.url,
+    aspect: "aspect-[3/4]",
+    imgClass: "scale-[1.2]",
   },
 ];
 
@@ -266,11 +269,11 @@ function Produtos() {
         <div className="mt-16 grid md:grid-cols-2 gap-8 lg:gap-12">
           {PRODUTOS.map((p) => (
             <article key={p.name} className="group flex flex-col rounded-[2rem] bg-card border border-border overflow-hidden shadow-[0_18px_50px_-30px_rgba(30,43,94,0.25)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_60px_-30px_rgba(233,30,99,0.35)]">
-              <div className="relative aspect-[5/4] overflow-hidden bg-cream p-6">
+              <div className={`relative overflow-hidden bg-cream ${p.aspect}`}>
                 <img
                   src={p.img}
                   alt={p.name}
-                  className="h-full w-full object-contain transition-transform duration-[900ms] ease-out group-hover:scale-105"
+                  className={`h-full w-full object-contain transition-transform duration-[900ms] ease-out group-hover:scale-105 ${p.imgClass ?? ""}`}
                 />
 
                 <span className="absolute top-5 left-5 rounded-full bg-background/90 backdrop-blur px-3.5 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
@@ -342,10 +345,10 @@ function Atacado() {
 }
 
 const GALERIA = [
-  { src: gal2.url, tall: true, alt: "Pudim com calda dourada" },
+  { src: gal2.url, tall: true, alt: "Pudim com calda dourada", position: "center" },
   { src: gal1.url, tall: false, alt: "Detalhe cremoso" },
   { src: gal5.url, tall: false, alt: "Embalagem timbrada Doceria da Rebeka" },
-  { src: gal4.url, tall: true, alt: "Composição de doces" },
+  { src: gal4.url, tall: true, alt: "Composição de doces", position: "left-bottom" },
   { src: gal3.url, tall: false, alt: "Close do pudim" },
   { src: compos.url, tall: false, alt: "Composição de produtos" },
 ];
@@ -375,6 +378,7 @@ function Galeria() {
                 src={g.src}
                 alt={g.alt}
                 className="h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]"
+                style={{ objectPosition: g.position === "left-bottom" ? "left bottom" : "center" }}
                 loading="lazy"
               />
             </div>
