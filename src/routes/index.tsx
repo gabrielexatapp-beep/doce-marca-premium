@@ -377,7 +377,8 @@ function Galeria() {
               <img
                 src={g.src}
                 alt={g.alt}
-                className={`h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06] ${g.position === "left-bottom" ? "object-left-bottom" : "object-center"}`}
+                className="h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]"
+                style={{ objectPosition: g.position === "left-bottom" ? "left bottom" : "center" }}
                 loading="lazy"
               />
             </div>
