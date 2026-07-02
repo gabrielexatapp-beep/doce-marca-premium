@@ -48,18 +48,14 @@ function Header() {
       }`}
     >
       <div className="container-editorial flex h-20 items-center justify-between">
-        <a href="#inicio" className="flex items-center gap-3">
-          <img src={logo.url} alt="Doceria da Rebeka" className="h-14 w-14 object-contain" />
-          <div className="hidden sm:flex flex-col">
-            <span className="font-display text-xl leading-tight text-navy">
-              Doceria<br />
-              <span className="text-primary">da Rebeka</span>
-            </span>
-            <span className="text-sm font-medium text-navy/70 mt-0.5 tracking-wide">
-              A maior fábrica de pudim do mundo é joseense
-            </span>
-          </div>
+        <a href="#inicio" className="flex items-center gap-4">
+          <img src={logo.url} alt="Doceria da Rebeka" className="h-28 w-28 object-contain" />
+          <span className="hidden sm:block font-display text-base md:text-lg leading-tight text-navy">
+            A Maior Fábrica<br />
+            <span className="text-primary">de Pudim do Mundo!</span>
+          </span>
         </a>
+
         <nav className="hidden lg:flex items-center gap-9">
           {NAV.map((n) => (
             <a
