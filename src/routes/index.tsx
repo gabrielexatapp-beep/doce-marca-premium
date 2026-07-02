@@ -246,6 +246,7 @@ const PRODUTOS = [
     highlights: ["Chocolate intenso", "Textura cremosa", "Porção individual", "Ideal para vitrines", "Alto apelo visual"],
     img: brigadeirao.url,
     aspect: "aspect-[3/4]",
+    imgClass: "scale-[1.2]",
   },
 ];
 
