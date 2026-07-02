@@ -200,7 +200,7 @@ function Historia() {
 
 const NUMEROS = [
   { title: "+ de 11.000", sub: "Pontos de venda pelo Brasil" },
-  { title: "Maior produtora", sub: "de pudim do Brasil" },
+  { title: "Maior produtora", sub: "de pudim do mundo" },
   { title: "Atacado", sub: "Atendimento exclusivo para mercados e distribuidores" },
   { title: "Qualidade", sub: "Padrão rigoroso em cada receita" },
 ];
